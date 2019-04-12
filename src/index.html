@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts2/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <script src="js/flexible.js"></script>
+    <div class="wrapper">
+        <div class="header">
+            <div>
+                <i class="iconfont icon-xiangzuo"></i>
+                <span>无连接</span>
+                <i class="iconfont icon-gengduo-2"></i>
+            </div>
+            <div class="div">
+                <i class="iconfont icon-tuichu start"></i>
+                <i class="iconfont icon-shouye"></i>
+                <i class="iconfont icon-shouqi-01"></i>
+                <i class="iconfont icon-shouji"></i>
+            </div>
+        </div>
+        <div class="main">
+            <div>
+                <span class="active">
+                滑动控制上下左右，点击确定长安调节电视音量
+            </span>
+                <span>
+                    滑动控制上下左右
+            </span>
+                <span>
+                 滑动控制上下左右，点击确定长安调节电视音量
+            </span>
+                <span>
+               滑动控制上下左右
+          </span>
+            </div>
+        </div>
+        <div class="footer">
+            <i class="iconfont icon-gongzuo work"></i>
+            <i class="iconfont icon-fenxiang2 fenx"></i>
+        </div>
+    </div>
+    <script>
+        const divI = document.querySelectorAll(".div>i");
+        const active = document.querySelector(".active");
+        console.log(divI)
+        divI.forEach(item => {
+            item.onclick = function() {
+                divI.className.add = "active";
+
+            }
+        })
+    </script>
+</body>
+
+</html>
